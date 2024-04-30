@@ -26,7 +26,7 @@ export const personajes:Array<imagen>=[
 
 ];
 export const extras:Array<imagen>=[
-    {tipo:"extra",nombre:"Kirby",url:''},
+    {tipo:"extra",nombre:"Kirby",url:'assets/imgs/Person/kirby100x100.gif'},
     {tipo:"extra",nombre:"BM0",url:'assets/imgs/Person/BM02100x100.gif'},
     {tipo:"extra",nombre:"jigglypuff",url:'assets/imgs/Person/jigglypuff100x100.gif'},
     {tipo:"extra",nombre:"BM0",url:'assets/imgs/Person/BM0100x100.png'},
