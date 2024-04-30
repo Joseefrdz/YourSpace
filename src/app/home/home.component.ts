@@ -8,7 +8,7 @@ import { canciones, sonidos } from '../archivoMusic';
 })
 export class HomeComponent implements OnInit {
 
-  newWindow = 'http://localhost:4200/componente';
+  newWindow = 'https://joseefrdz.github.io/YourSpace/componente';
 
   win: HTMLAudioElement = new Audio();
   light: HTMLAudioElement = new Audio();

@@ -1,14 +1,11 @@
 .base {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; Centra verticalmente los elementos */
     align-items: center;
-    /* Centra horizontalmente los elementos */
     height: 100%;
     width: 100%;
     position: relative;
 }
-
 .base::before {
     height: 100%;
     width: 100%;
@@ -21,7 +18,6 @@
     background-size: cover;
     z-index: -1;
 }
-
 .titul {
     display: flex;
     justify-content: center;
@@ -34,19 +30,9 @@
     background-color: rgb(101, 30, 115);
     overflow-x: hidden;
     overflow: hidden;
-    animation: border-flicker 4s linear infinite;
     cursor: default;
+    box-shadow: 0px 0px 20px black, rgba(0, 0, 0, 0.66) 0px 0.1vh 1vh 0.6vh inset !important;
 }
-
-/* .titul:hover {
-    background-color: rgb(60, 24, 68);
-    box-shadow: 0px 1vw 0px 0px #751280,
-        0px 1.25vw 20px rgb(0, 255, 255),
-        0px 0px 20px rgb(0, 255, 255);
-    cursor: default;
-    text-shadow: 0px 0px 5px rgb(0, 255, 255);
-} */
-
 h1 {
     margin-top: 2.5vh;
     font-size: 4vw;
@@ -57,20 +43,16 @@ h1 {
     letter-spacing: 10px;
     animation: text-flicker 4s linear infinite;
 }
-
 .offset {
     animation: letter-flicker 3s linear infinite;
 }
 .offset1 {
     animation: letter-flicker 5s linear infinite;
 }
-
 .gen {
     height: 4vw;
     margin-top: 5vw;
-    /* border: 2px solid seagreen; */
 }
-
 .boton {
     height: 100%;
     width: 100%;
@@ -82,23 +64,17 @@ h1 {
     box-shadow: 0px 1vw 0px 0px #751280,
                 0px 20px 50px rgba(0, 0, 0),
                 0px 15px 20px rgba(0, 0, 0),
-                rgba(0, 0, 0, 0.607) 0px 1vh 1vh -1vh inset, 
-                rgba(0, 0, 0, 0.66) 0px 0.6vh 1vh 0.5vh inset;
+                rgba(0, 0, 0, 0.607) 0px 0.1vh 1vh 0.6vh inset;
     color: rgb(0, 0, 0);
-    /* transition: all ease 0.1s; */
     transition: all ease  0.1s;
     letter-spacing: 1px;
 }
-
 .boton:hover {
     background-color: rgb(60, 24, 68);
     box-shadow: 0px 1vw 0px 0px #751280,
-                /* 0px 0vw 30px rgba(0, 255, 255, 0.6),
-                0px 1vw 30px rgba(0, 255, 255, 0.6), */
                 0px 20px 50px rgba(0, 0, 0),
                 0px 15px 50px rgba(0, 0, 0),
-                rgba(0, 0, 0, 0.607) 0px 1vh 1vh -1vh inset, 
-                rgba(0, 0, 0, 0.66) 0px 0.6vh 1vh 0.5vh inset;
+                rgba(0, 0, 0, 0.607) 0px 0.1vh 1vh 0.6vh inset;
     color: rgb(0, 255, 255);
     text-shadow: 0px 0px 3px rgb(0, 255, 255);
     cursor: pointer;
@@ -109,7 +85,6 @@ h1 {
                 0px 10px 30px rgba(0, 255, 255, 0.6),
                 0px 0px 30px rgba(0, 255, 255, 0.6);
 }
-
 .custom{
     margin-top: 2vw;
     margin-bottom: 1vw;
@@ -124,28 +99,22 @@ h1 {
     box-shadow: 0px 1vw 0px 0px #751280,
                 0px 15px 25px rgba(0, 0, 0),
                 0px 15px 20px rgba(0, 0, 0),
-            rgba(0, 0, 0, 0.607) 0px 1vh 1vh -1vh inset, 
-            rgba(0, 0, 0, 0.66) 0px 0.6vh 1vh 0.5vh inset;
+            rgba(0, 0, 0, 0.607) 0px 0.1vh 1vh 0.6vh inset;
 }
-
 .description{
     margin-top: 2vw;
     font-family: "Play", sans-serif;
     font-size: 1vw;
-    /* padding-left: 1vw; */
     text-justify: auto;
     text-align: center;
     color: rgb(0, 255, 255);
 }
-
 .music {
     margin-top: 2vw;
     display: flex;
     flex-direction: column;
-    /* border: 2px solid rgb(255, 255, 255); */
     width: 90%;
 }
-
 .btns {
     display: flex;
     align-items: center;
@@ -155,217 +124,92 @@ h1 {
     width: 90%;
     height: 10vw;
     border: 5px solid rgb(137, 39, 137);
-    /* box-shadow: rgba(0, 0, 0, 0.607) 0px 1vh 1vh -1vh inset, 
-                rgba(0, 0, 0, 0.66) 0px 0.6vh 1vh 0.5vh inset; */
 }
-
 @keyframes letter-flicker {
     0% {
         opacity: 0.1;
         text-shadow: 0px 0px 29px rgb(0, 255, 255);
     }
-
     2% {
         opacity: 0.1;
         text-shadow: 0px 0px 29px rgb(0, 255, 255);
     }
-
     4% {
         opacity: 1;
         text-shadow: 0px 0px 29px rgb(0, 255, 255);
     }
-
-
     19% {
         opacity: 1;
         text-shadow: 0px 0px 29px rgb(0, 255, 255);
     }
-
     21% {
         opacity: 0.1;
         text-shadow: 0px 0px 29px rgb(0, 255, 255);
     }
-
     23% {
         opacity: 1;
         text-shadow: 0px 0px 29px rgb(0, 255, 255);
     }
-
     80% {
         opacity: 1;
         text-shadow: 0px 0px 29px rgb(0, 255, 255);
     }
-
     83% {
         opacity: 0.4;
         text-shadow: 0px 0px 29px rgb(0, 255, 255);
     }
-
     87% {
         opacity: 1;
         text-shadow: 0px 0px 29px rgb(0, 255, 255);
     }
 }
-
 @keyframes text-flicker {
     0% {
         opacity: 0.1;
         text-shadow: 0px 0px 29px rgb(0, 255, 255);
     }
-
     2% {
         opacity: 1;
         text-shadow: 0px 0px 29px rgb(0, 255, 255);
     }
-
     8% {
         opacity: 0.1;
         text-shadow: 0px 0px 29px rgb(0, 255, 255);
     }
-
     9% {
         opacity: 1;
         text-shadow: 0px 0px 29px rgb(0, 255, 255);
     }
-
     12% {
         opacity: 0.1;
         text-shadow: 0px 0px 29px rgb(0, 255, 255);
     }
-
     20% {
         opacity: 1;
         text-shadow: 0px 0px 29px rgb(0, 255, 255);
     }
-
     25% {
         opacity: 0.3;
         text-shadow: 0px 0px 29px rgb(0, 255, 255);
     }
-
     30% {
         opacity: 1;
         text-shadow: 0px 0px 29px rgb(0, 255, 255);
     }
-
     70% {
         opacity: 0.7;
         text-shadow: 0px 0px 29px rgb(0, 255, 255);
     }
-
     72% {
         opacity: 0.2;
         text-shadow: 0px 0px 29px rgb(0, 255, 255);
     }
-
     77% {
         opacity: .9;
         text-shadow: 0px 0px 29px rgb(0, 255, 255);
     }
-
     100% {
         opacity: .9;
         text-shadow: 0px 0px 29px rgb(0, 255, 255);
     }
 }
-
-@keyframes border-flicker {
-    0% {
-        -webkit-box-shadow: 0px 0px 10px 4px rgba(0, 255, 255, 0.73);
-        -moz-box-shadow: 0px 0px 10px 4px rgba(0, 255, 255, 0.73);
-        box-shadow: 0px 0px 10px 4px rgba(0, 255, 255, 0.73),
-        rgba(0, 0, 0, 0.607) 0px 1vh 1vh -1vh inset, 
-        rgba(0, 0, 0, 0.66) 0px 0.6vh 1vh 0.5vh inset;
-    }
-
-    2% {
-        -webkit-box-shadow: 0px 0px 50px 4px rgba(0, 255, 255, 0.73);
-        -moz-box-shadow: 0px 0px 50px 4px rgba(0, 255, 255, 0.73);
-        box-shadow: 0px 0px 50px 4px rgba(0, 255, 255, 0.73),
-        rgba(0, 0, 0, 0.607) 0px 1vh 1vh -1vh inset, 
-        rgba(0, 0, 0, 0.66) 0px 0.6vh 1vh 0.5vh inset;
-    }
-
-    8% {
-        -webkit-box-shadow: 0px 0px 10px 4px rgba(0, 255, 255, 0.73);
-        -moz-box-shadow: 0px 0px 10px 4px rgba(0, 255, 255, 0.73);
-        box-shadow: 0px 0px 10px 4px rgba(0, 255, 255, 0.73),
-        rgba(0, 0, 0, 0.607) 0px 1vh 1vh -1vh inset, 
-        rgba(0, 0, 0, 0.66) 0px 0.6vh 1vh 0.5vh inset;
-    }
-
-    9% {
-        -webkit-box-shadow: 0px 0px 50px 4px rgba(0, 255, 255, 0.73);
-        -moz-box-shadow: 0px 0px 50px 4px rgba(0, 255, 255, 0.73);
-        box-shadow: 0px 0px 50px 4px rgba(0, 255, 255, 0.73),
-        rgba(0, 0, 0, 0.607) 0px 1vh 1vh -1vh inset, 
-        rgba(0, 0, 0, 0.66) 0px 0.6vh 1vh 0.5vh inset;
-    }
-
-    12% {
-        -webkit-box-shadow: 0px 0px 10px 4px rgba(0, 255, 255, 0.73);
-        -moz-box-shadow: 0px 0px 10px 4px rgba(0, 255, 255, 0.73);
-        box-shadow: 0px 0px 10px 4px rgba(0, 255, 255, 0.73),
-        rgba(0, 0, 0, 0.607) 0px 1vh 1vh -1vh inset, 
-        rgba(0, 0, 0, 0.66) 0px 0.6vh 1vh 0.5vh inset;
-    }
-
-    20% {
-        -webkit-box-shadow: 0px 0px 50px 4px rgba(0, 255, 255, 0.73);
-        -moz-box-shadow: 0px 0px 50px 4px rgba(0, 255, 255, 0.73);
-        box-shadow: 0px 0px 50px 4px rgba(0, 255, 255, 0.73),
-        rgba(0, 0, 0, 0.607) 0px 1vh 1vh -1vh inset, 
-        rgba(0, 0, 0, 0.66) 0px 0.6vh 1vh 0.5vh inset;
-    }
-
-    25% {
-        -webkit-box-shadow: 0px 0px 20px 4px rgba(0, 255, 255, 0.73);
-        -moz-box-shadow: 0px 0px 20px 4px rgba(0, 255, 255, 0.73);
-        box-shadow: 0px 0px 20px 4px rgba(0, 255, 255, 0.73),
-        rgba(0, 0, 0, 0.607) 0px 1vh 1vh -1vh inset, 
-        rgba(0, 0, 0, 0.66) 0px 0.6vh 1vh 0.5vh inset;
-    }
-
-    30% {
-        -webkit-box-shadow: 0px 0px 50px 4px rgba(0, 255, 255, 0.73);
-        -moz-box-shadow: 0px 0px 50px 4px rgba(0, 255, 255, 0.73);
-        box-shadow: 0px 0px 50px 4px rgba(0, 255, 255, 0.73),
-        rgba(0, 0, 0, 0.607) 0px 1vh 1vh -1vh inset, 
-        rgba(0, 0, 0, 0.66) 0px 0.6vh 1vh 0.5vh inset;
-    }
-
-    70% {
-        -webkit-box-shadow: 0px 0px 40px 4px rgba(0, 255, 255, 0.73);
-        -moz-box-shadow: 0px 0px 40px 4px rgba(0, 255, 255, 0.73);
-        box-shadow: 0px 0px 40px 4px rgba(0, 255, 255, 0.73),
-        rgba(0, 0, 0, 0.607) 0px 1vh 1vh -1vh inset, 
-        rgba(0, 0, 0, 0.66) 0px 0.6vh 1vh 0.5vh inset;
-    }
-
-    72% {
-        -webkit-box-shadow: 0px 0px 15px 4px rgba(0, 255, 255, 0.73);
-        -moz-box-shadow: 0px 0px 15px 4px rgba(0, 255, 255, 0.73);
-        box-shadow: 0px 0px 15px 4px rgba(0, 255, 255, 0.73),
-        rgba(0, 0, 0, 0.607) 0px 1vh 1vh -1vh inset, 
-        rgba(0, 0, 0, 0.66) 0px 0.6vh 1vh 0.5vh inset;
-    }
-
-    77% {
-        -webkit-box-shadow: 0px 0px 50px 4px rgba(0, 255, 255, 0.73);
-        -moz-box-shadow: 0px 0px 50px 4px rgba(0, 255, 255, 0.73);
-        box-shadow: 0px 0px 50px 4px rgba(0, 255, 255, 0.73),
-        rgba(0, 0, 0, 0.607) 0px 1vh 1vh -1vh inset, 
-        rgba(0, 0, 0, 0.66) 0px 0.6vh 1vh 0.5vh inset;
-    }
-
-    100% {
-        -webkit-box-shadow: 0px 0px 50px 4px rgba(0, 255, 255, 0.73);
-        -moz-box-shadow: 0px 0px 50px 4px rgba(0, 255, 255, 0.73);
-        box-shadow: 0px 0px 50px 4px rgba(0, 255, 255, 0.73),
-        rgba(0, 0, 0, 0.607) 0px 1vh 1vh -1vh inset, 
-        rgba(0, 0, 0, 0.66) 0px 0.6vh 1vh 0.5vh inset;
-    }
-}
-/* -webkit-box-shadow: 0px 0px 35px 4px rgba(0, 255, 255, 0.73);
-        -moz-box-shadow: 0px 0px 35px 4px rgba(0, 255, 255, 0.73);
-        box-shadow: 0px 0px 35px 4px rgba(0, 255, 255, 0.73); */
