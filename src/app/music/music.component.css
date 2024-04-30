@@ -1,0 +1,77 @@
+.music{
+    width: 100%;
+    height: 2.75vw;
+    font-family: "Play", sans-serif;  
+    font-size: 1.5vw;
+    font-weight: bold;
+    border: 3px solid rgb(132, 38, 132);
+    background-color: rgb(101, 30, 115);
+    box-shadow: 0px 0.5vw 0px 0px #751280,
+        0px -2px 10px rgba(0, 0, 0),
+        0px 5px 10px rgba(0, 0, 0),
+        rgba(0, 0, 0, 0.607) 0px 1vh 1vh -1vh inset, 
+        rgba(0, 0, 0, 0.66) 0px 0.6vh 1vh 0.5vh inset;
+    color: rgb(0, 0, 0);
+    outline: none !important;
+}
+.music:hover{
+    color: rgb(0, 255, 255);
+    text-shadow: 0px 0px 3px rgb(0, 255, 255);
+}
+.opcion-seleccionada {
+    color: rgb(0, 255, 255);
+    text-shadow: 0px 0px 3px rgb(0, 255, 255);
+}
+
+.test{
+    margin-top: 0.75vw;
+    display: flex;
+    flex-direction: row;
+    font-size: 1.2vw;
+    justify-content: end;
+    align-items: center;
+}
+.text{
+    margin: 0; /* Asegura que no hay margen predeterminado */
+    font-weight: 500;
+    color: rgb(0, 255, 255);
+}
+.testp{
+    width: fit-content;
+    height: fit-content;
+    font-size: 2vw;
+    color: rgb(10, 10, 10);
+    text-shadow: 0px 0px 2px rgb(0, 0, 0);
+    cursor: pointer;
+}
+.testp-pulse{
+    width: fit-content;
+    height: fit-content;
+    font-size: 2vw;
+    color: rgb(0, 255, 255);
+    text-shadow: 0px 0px 5px rgb(0, 255, 255);
+    cursor: pointer;
+}
+.tests{
+    width: fit-content;
+    height: fit-content;
+    font-size: 2vw;
+    color: rgb(10, 10, 10);
+    text-shadow: 0px 0px 2px rgb(0, 0, 0);
+    cursor: pointer;
+}
+.tests-pulse{
+    width: fit-content;
+    height: fit-content;
+    font-size: 2vw;
+    color: rgb(0, 255, 255);
+    text-shadow: 0px 0px 5px rgb(0, 255, 255);
+    cursor: pointer;
+}
+
+option{
+    font-family: "Play", sans-serif;  
+    font-size: 1.25vw;
+    font-weight: bold;
+
+}

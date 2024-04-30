@@ -1,0 +1,25 @@
+<!-- <p>music works!</p> -->
+
+<!-- <select class="music">
+    <option value="" selected style="display: none;">Elige una canción</option>
+    <option value="song1">Canción 1</option>
+    <option value="song2">Canción 2</option>
+    <option value="song3">Canción 3</option>
+    <option value="song4">Canción 4</option>
+</select> -->
+
+<form [formGroup]="select">
+    <select formControlName="opcion" class="music" (change)="cambios()" (click)="playSound()">
+        <option value="" selected style="display: none;">Elige una canción</option>
+        @for (item of listas; track item.id) {
+            
+            <option [value]="item.playlist" [ngClass]="{'opcion-seleccionada': song === item.id}">{{item.titulo}}</option>
+            
+        }
+    </select>
+</form>
+<div class="test">
+    <p class="text" *ngIf="choose"> Test</p>
+    <mat-icon class="testp" *ngIf="choose" (click)="playtest()" [ngClass]="{'testp-pulse': play}">play_arrow</mat-icon>
+    <mat-icon class="tests" *ngIf="choose" (click)="pausetest()" [ngClass]="{'tests-pulse': pause}">pause</mat-icon>
+</div>

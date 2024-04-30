@@ -1,0 +1,40 @@
+<!-- <p>Generar Ventana</p>
+<button (click)="ventana()">generar</button>-->
+
+<!-- <div class="drag-list" (dragstart)="onDragStart($event)">
+    <img class="person" src="https://i.ibb.co/5KR0F3L/Finn-original-sentado-1-1.png" draggable="true" style="width: 200px; height: 200px;"/>
+    <img class="extra" src="https://i.ibb.co/ky2pXdL/BM0.png" draggable="true" style="width: 200px; height: 200px;"/>
+    <img class="extra" src="https://i.ibb.co/yyK4fd5/Paz.gif" draggable="true" style="width: 200px; height: 200px;"/>
+    <img class="fondo" src="https://i.ibb.co/j8xM9pV/Fondo-Banco.png" draggable="true" style="width: 200px; height: 200px;"/>
+    <img class="paisaje" src="https://i.ibb.co/cJhhJfw/Paisaje.png" draggable="true" style="width: 200px; height: 200px;"/>
+    <img class="paisaje" src="https://i.ibb.co/QkVTNJY/descarga.gif" draggable="true" style="width: 200px; height: 200px;"/>
+</div>  -->
+
+                                        <!-- C O D I G O -->
+
+<div class="base">
+
+    <div class="titul" (mouseover)="playsound()" (mouseout)="stopsound()">
+
+        <h1><span class="offset1">Y</span>our<span class="offset">S</span>pace</h1>
+    </div>
+    
+    <div class="gen">
+        <button class="boton" (click)="ventana()">Generar Espacio</button>
+    </div>
+
+    <div class="custom">
+        <div class="description">
+            <p>Elige tu música, genera tu espacio, arrastra las imágenes que desees a él para personalizarlo</p>
+            <p>y disfruta de la música sin interrupción</p>
+
+        </div>
+        <div class="music">
+            <app-music></app-music>
+        </div>
+        <div class="btns">
+            <app-btns></app-btns>
+        </div>
+
+    </div>
+</div>

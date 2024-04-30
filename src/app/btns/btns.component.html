@@ -1,0 +1,23 @@
+<div class="botonera">
+    <button class="boton" id="paisaje" (click)="paisaje()">Paisaje</button>
+    <button class="boton" id="fondo" (click)="fondo()">Fondo</button>
+    <button class="boton" id="person" (click)="person()">Personaje</button>
+    <button class="boton" id="extra" (click)="extra()">Extra</button>
+</div>
+
+
+<div class="card" *ngIf="pulsado == true" cdkdrag><!-- cdkdrag -->
+    <div class="cierre">
+        <p style="position: absolute; margin-top: 0.5vw; font-family: 'Play', sans-serif; cursor: default;">Selecciona una imagen</p>
+        <mat-icon class="icon" (click)="cerrar()">close</mat-icon>
+    </div>
+    <div class="imgs" (dragstart)="onDragStart($event)">
+        @for(item of imagenes; track item.url){
+
+            <img class="{{item.tipo}}" src="{{item.url}}" 
+            draggable="true" style="width: 5vw; height: 5vw; margin: 0.75vw;
+            border: 0.25vw solid rgb(132, 38, 132); background-color: rgb(27, 27, 27); ">
+
+        }
+    </div>
+</div>
