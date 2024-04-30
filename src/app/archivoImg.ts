@@ -17,19 +17,20 @@ export const fondos:Array<imagen>=[
     {tipo:"fondo",nombre:"acantilado",url:'assets/imgs/Fondo/acantilado.png'},
 ];
 export const personajes:Array<imagen>=[
-    {tipo:"person",nombre:"Jake",url:'assets/imgs/Person/2a9p.gif'},
-    {tipo:"person",nombre:"Finn",url:'assets/imgs/Person/Finn_original_sentado-1-_1.png'},
-    {tipo:"person",nombre:"Rick",url:'assets/imgs/Person/WG8Q.gif'},
-    {tipo:"person",nombre:"Bulbasaur",url:'assets/imgs/Person/WnES.gif'},
-    {tipo:"person",nombre:"Rick2",url:'assets/imgs/Person/WS2c.gif'},
-    {tipo:"person",nombre:"Squirtel",url:'assets/imgs/Person/ZDcp.gif'},    
+    {tipo:"person",nombre:"Jake",url:'assets/imgs/Person/jake100x100.gif'},
+    {tipo:"person",nombre:"Finn",url:'assets/imgs/Person/Finn100x100.png'},
+    {tipo:"person",nombre:"Rick",url:'assets/imgs/Person/Rick100x100.gif'},
+    {tipo:"person",nombre:"Bulbasaur",url:'assets/imgs/Person/bulbasaur100x100.gif'},
+    {tipo:"person",nombre:"Rick2",url:'assets/imgs/Person/Rick2100x100.gif'},
+    {tipo:"person",nombre:"Squirtel",url:'assets/imgs/Person/Squirtel100x100.gif'},    
 
 ];
 export const extras:Array<imagen>=[
-    {tipo:"extra",nombre:"Kirby",url:'assets/imgs/Person/45RT.gif'},
-    {tipo:"extra",nombre:"BM0",url:'assets/imgs/Person/Paz.gif'},
-    {tipo:"extra",nombre:"Yigglipuf",url:'assets/imgs/Person/Ve5.gif'},
-    {tipo:"extra",nombre:"BM0",url:'assets/imgs/Person/BM0.png'},
-    {tipo:"extra",nombre:"pinguino",url:'assets/imgs/Person/Z5cP.gif'},
-    {tipo:"extra",nombre:"gato",url:'assets/imgs/Person/bdP.gif'},
+    {tipo:"extra",nombre:"Kirby",url:''},
+    {tipo:"extra",nombre:"BM0",url:'assets/imgs/Person/BM02100x100.gif'},
+    {tipo:"extra",nombre:"jigglypuff",url:'assets/imgs/Person/jigglypuff100x100.gif'},
+    {tipo:"extra",nombre:"BM0",url:'assets/imgs/Person/BM0100x100.png'},
+    {tipo:"extra",nombre:"pinguino",url:'assets/imgs/Person/pinguino100x100.gif'},
+    {tipo:"extra",nombre:"gato",url:'assets/imgs/Person/gato100x100.gif'},
+    {tipo:"extra",nombre:"pikachu",url:'assets/imgs/Person/pikachu100x100.gif'},
 ];
