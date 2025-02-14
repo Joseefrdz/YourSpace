@@ -1,4 +1,26 @@
-# YourSpace
+# YourSpace 
+ 
+Crea tu propio espacio personalizado eligiendo entre una lista de canciones, videos y personajes. Diseña el ambiente perfecto para programar o simplemente relajarte ✨!
+
+## ¿Cómo funciona? 
+
+1. Es muy fácil! Pulsa el botón "Generar Espacio" ➡️ y se abrirá una ventana flotante en tu navegador.
+
+2. Elige tu música!🎧 Selecciona la canción o el sonido de fondo que más te guste. Puedes escuchar un fragmento de prueba antes de decidirte! 
+
+3. Personaliza tu espacio! Arrastra los elementos directamente a la ventana generada ️y crea el ambiente perfecto para ti. ✨
+
+## ¿Cómo se desarrolló YourSpace? 
+
+La idea de YourSpace surgió de mi propia experiencia como programador. Paso muchas horas escuchando música Lo-fi chill y viendo videos relajantes en bucle mientras trabajo. Un día, me di cuenta de que sería genial tener una aplicación web que me permitiera personalizar mi propio espacio de trabajo virtual, combinando la música y los videos que más me gustan. 
+
+Así que me puse manos a la obra y comencé a desarrollar YourSpace. Utilicé Angular 17 para crear la aplicación web. Fue un proyecto desafiante pero muy gratificante, y estoy muy contento con el resultado final. 
+
+Espero que te guste!
+
+![YourSpace](https://i.ibb.co/4RJ3z5sv/Your-Space.png)
+
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.0.
 
